@@ -1,0 +1,46 @@
+
+.hero-container{
+    width:100%;
+    height:170px;
+    overflow: hidden;
+    position:relative;
+  }
+
+.menu img {
+    object-fit: cover;
+
+}
+
+  /*Tablet menu*/
+  @media all and (min-width: 468px){ 
+
+.hero-container{
+        width:100%;
+        height:300px;
+        overflow: hidden;
+        position:relative;
+      }
+
+.menu img {
+    overflow: hidden;
+    object-fit: cover;
+
+}
+
+  }
+
+@media all and (min-width: 768px){
+
+.hero-container{
+    width:100%;
+    height:600px;
+    overflow: hidden;
+    position: relative;
+  }
+
+.menu img {
+    overflow: hidden;
+    object-fit: cover;
+}
+
+     }

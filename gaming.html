@@ -10,8 +10,29 @@
         <title>Gaming Info | Nook Cafe</title>
         <!--Like stylesheets-->
         <!--Homestyle-->
+        <link rel="stylesheet" href="css/gaming.css">
         <!--Header-->
+        <link rel="stylesheet" href="css/header.css">
         <!--Footer-->
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+
+            $(function() {
+
+                $(".toggle").on("click", function(){
+
+                    if($(".item").hasClass("active")){
+                        $(".item").removeClass("active");
+                    }
+                    else{
+                        $(".item").addClass("active");
+                    }
+                })
+            });
+
+        </script>
     
     </head>
 
@@ -25,13 +46,7 @@
             <li class="logo"><a class="a-header" href="index.html">Nook Cafe</a></li>
         <nav>
             <ul class="NavOptions">
-                <li class="item"><a class="a-header" href="gaming.html">Video game section
-                    <ul class="submenu">
-                        <li class="sitem"><a href="gaming.html" target="blank">PC gaming</a></li>
-                        <li class="sitem"><a href="gaming.html" target="blank">Console gaming</a></li>
-                        <li class="sitem"><a href="gaming.html" target="blank">VR gaming</a></li>
-                    </ul>
-                </a></li>
+                <li class="item"><a class="a-header" href="gaming.html">Video game section</a></li>
                 <li class="item"><a class="a-header" href="cafe.html" >Cafe menu</a></li>
                 <li class="item"><a class="a-header" href="enquire.html" >Enquire</a></li>
                 <li class="item button"><a class="a-header" href="Login.html">login</a></li>
@@ -44,28 +59,30 @@
 
         <!--Tabs section-->
 
-        <div class="containertabs">
-            <div class="tabs">
-                <h2>PC Section</h2>
-                <h3>Games Offered</h3>
-                <h3>Time and Prices</h3>
-                <h2>Console Section</h2>
-                <h3>Games Offered</h3>
-                <h3>Time and Prices</h3>
-                <h2>VR Section</h2>
-                <h3>Games Offered</h3>
-                <h3>Time and Prices</h3>
-            </div>
-            <div class="tabs-content">
-                <div>
-                    <img class="PCimg" src="assets/pcPage.jpeg" alt="PCimg">
-                    <h2> PC Gaming</h2>
+        <main class="courses-container">
+            <!--Sidebar with course list-->
+            <aside class="sidebar">
+                <div class="category">Gaming Section</div>
+                <ul>
+                    <li><a href="#" onclick="showCourses('PC-Gaming')">PC Gaming</a></li>
+                    <li><a href="#" onclick="showCourses('Console-Gaming')">Console Gaming</a></li>
+                    <li><a href="#" onclick="showCourses('VR-Gaming')">VR Gaming</a></li>
+                </ul>
+            </aside>
+
+            <!--Section info area-->
+            <section class="course-info">
+
+                <!--PC SPECIFICATIONS (Default visible)-->
+                <div id="PC-Gaming" class="course-detail active">
+                    <img id="pcimg" src="assets/pcPage.jpeg" alt="PC gaming area">
+                    <h2>PC Gaming</h2>
                     <p>
                         High spec PC's with a variety of games for you to feel like you're in an esports venue. 
                         The PC gaming section allows for players to play their favourite games, whether with their friends are our neighbouring consoles or whether
                         they are here for the solo vibe. The PC hardware is kept up to date to ensure no trouble is ever faced when gaming. 
                     </p>
-                    <h4>PC Specifications</h4>
+                    <h2>PC Specifications</h4>
                     <ul>
                         <li>Intel i9 - 10980XE CPU </li>
                         <li>32GB RAM </li>
@@ -99,15 +116,16 @@
                     </ul>
                 </div>
 
-                <div>
-                    <img class="Consoleimg" src="assets/consolepage.jpeg" alt="Consoleimg">
+                <!--CONSOLE SECTION-->
+                <div id="Console-Gaming" class="course-detail">
+                    <img id="consoleimg"  class="Consoleimg" src="assets/consolepage.jpeg" alt="Consoleimg">
                     <h2> Console Gaming</h2>
                     <p>
                         Playstation, Xbox, Nintendo. All the most used consoles are available for you and your friends to play with.
                         The Console gaming section allows for players to play their favourite games, whether with their friends are our neighbouring consoles or whether
                         they are here for the solo vibe. The Console hardware is kept up to date to ensure no trouble is ever faced when gaming. 
                     </p>
-                    <h4>Consoles Available for playing</h4>
+                    <h2>Consoles Available for playing</h4>
                     <ul>
                         <li>Nintendo Switch OLED Model</li>
                         <li>Nintendo Switch 2</li>
@@ -148,8 +166,9 @@
                     </ul>
                 </div>
 
-                <div>
-                    <img class="VRimg" src="assets/VRpage.jpeg" alt="VRimg">
+                <!--VR SECTION-->
+                <div id="VR-Gaming" class="course-detail">
+                    <img id="vrimg" class="VRimg" src="assets/VRpage.jpeg" alt="VRimg">
                     <h2> VR Gaming</h2>
                     <p>
                         Join us for our Virtual Reality game base, where you can play your favourite games on many different headsets. Enjoy the world of gaming all within a headset for 
@@ -157,7 +176,7 @@
                         The VR gaming section allows for players to play their favourite games, whether with their friends are our neighbouring consoles or whether
                         they are here for the solo vibe. The VR hardware is kept up to date to ensure no trouble is ever faced when gaming. All VR Headsets are sanitized after usage
                     </p>
-                    <h4>VR Specifications</h4>
+                    <h2>VR Specifications</h4>
                     <ul>
                         <li>Oculus Rift 3 </li>
                         <li>HTC Vive </li>
@@ -186,6 +205,55 @@
                         <li>R70 per person for birthday events</li>
                     </ul>
                 </div>
+            </section>
+        </main>
+
+
+                <!--Footer Section-->
+        <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Contact us</h4>
+                    <ul> 
+                        <li><a href="tel:+0720664782">Call now [011 111 1111]</a></li> <!--Turn to contact number-->
+                        <li><a href="email">NookCafe@gmail.com</a></li>
+                        <p class="copyright">&copy; copyright reserved</p>
+                    </ul>
+                </div>
+  
+                <div class="footer-col">
+                    <h4>Locations</h4>
+                    <ul>
+                        <li><a href="locations">Meyersdal</a></li> 
+                        <li><a href="locations">Pretoria</a></li> 
+                        <li><a href="locations">Bloemfontein</a></li> 
+                    </ul>
+                </div>
+  
+  
+                <div class="footer-col">
+                    <h4>Follow us</h4>
+                    <div class="social-links">
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+  
             </div>
         </div>
+    </footer>
+
+    <script>
+        function showCourses(courseId) {
+            //hide all course details
+            document.querySelectorAll('.course-detail').forEach(function(div) {
+                div.classList.remove('active');
+            });
+            //Show only the clicked one
+            document.getElementById(courseId).classList.add('active');
+        }
+    </script>
+
+    </body>
 </html>
