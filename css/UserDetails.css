@@ -155,3 +155,41 @@ button{
 .signUp-link p a:hover{
   text-decoration: underline;
 }
+
+.input-group textarea {
+    width: 320px;
+    font-size: 16px;
+    color: #fff;
+    padding: 5px;
+    background: transparent;
+    border: none;
+    outline: none;
+    resize: none; /* prevents user from resizing */
+}
+
+.input-group textarea:focus ~ label,
+.input-group textarea:valid ~ label {
+    top: -5px;
+}
+
+/* Make inputs and textarea consistent */
+.input-group input,
+.input-group textarea {
+    width: 320px;
+    font-size: 16px;
+    color: #fff;
+    padding: 0px 5px;
+    background: transparent;
+    border: none;
+    outline: none;
+    resize: none; /* prevent resizing of textarea */
+    height: 40px; /* same as inputs */
+}
+
+/* Floating labels for both input and textarea */
+.input-group input:focus ~ label,
+.input-group input:valid ~ label,
+.input-group textarea:focus ~ label,
+.input-group textarea:valid ~ label {
+    top: -5px;
+}

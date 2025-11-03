@@ -25,11 +25,9 @@
             <li class="logo"><a class="a-header" href="index.html">Nook Cafe</a></li>
         <nav>
             <ul class="NavOptions">
-                <li class="item"><a class="a-header" href="gaming.html">Video game section</a></li>
-                <li class="item"><a class="a-header" href="cafe.html" >Cafe menu</a></li>
-                <li class="item"><a class="a-header" href="enquire.html" >Enquire</a></li>
-                <li class="item button"><a class="a-header" href="Login.html">login</a></li>
-                <li class="item button secondary"><a class="a-header" href="signUp.html">Sign up</a></li>
+                <li class="item"><a class="a-header" target="blank" href="gaming.html">Video game section</a></li>
+                <li class="item"><a class="a-header" target="blank" href="cafe.html" >Cafe menu</a></li>
+                <li class="item button"><a class="a-header" target="blank" href="enquire.html">Enquire</a></li>
                 <li class="toggle"><a href="#"><span class="bars"></span></a></li>
             </ul>
         </nav>
@@ -57,7 +55,7 @@
                 <div class="footer-col">
                     <h4>Contact us</h4>
                     <ul> 
-                        <li><a href="tel:+0720664782">Call now [011 111 1111]</a></li> <!--Turn to contact number-->
+                        <li><a href="tel:+0720664782">Call now [011 678 1234]</a></li> <!--Turn to contact number-->
                         <li><a href="email">NookCafe@gmail.com</a></li>
                         <p class="copyright">&copy; copyright reserved</p>
                     </ul>
@@ -66,9 +64,7 @@
                 <div class="footer-col">
                     <h4>Locations</h4>
                     <ul>
-                        <li><a href="locations">Meyersdal</a></li> 
-                        <li><a href="locations">Pretoria</a></li> 
-                        <li><a href="locations">Bloemfontein</a></li> 
+                        <li><a href="https://www.google.com/maps/place/Sandton+City+Office+Towers/@-26.1079468,28.0537605,17z/data=!4m14!1m7!3m6!1s0x1e957334662cb431:0x484917656444f4d5!2sSandton+City+Office+Towers!8m2!3d-26.1079468!4d28.0537605!16s%2Fg%2F11nx0lq570!3m5!1s0x1e957334662cb431:0x484917656444f4d5!8m2!3d-26.1079468!4d28.0537605!16s%2Fg%2F11nx0lq570?entry=ttu&g_ep=EgoyMDI1MDkxNy4wIKXMDSoASAFQAw%3D%3D">Sandton</a></li> 
                     </ul>
                 </div>
   
@@ -76,14 +72,29 @@
                 <div class="footer-col">
                     <h4>Follow us</h4>
                     <div class="social-links">
-                        <a href=""><i class="fab fa-instagram"></i></a>
-                        <a href=""><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/nookcafe6?igsh=NDk3c212amtvMW9z&utm_source=qr"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
   
             </div>
         </div>
     </footer>
+
+    <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggle = document.querySelector(".toggle");
+    const items = document.querySelectorAll(".item");
+
+    if (toggle) {
+      toggle.addEventListener("click", function (e) {
+        e.preventDefault();
+        items.forEach(item => item.classList.toggle("active"));
+      });
+    }
+  });
+</script>
+
+
 
     </body>
     </html>

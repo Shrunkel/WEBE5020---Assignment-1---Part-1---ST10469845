@@ -133,6 +133,7 @@ ul{
 @media all and (min-width: 468px){
   .NavOptions{
       justify-content: center;
+      cursor: pointers;
   }
   .logo{
       flex: 1;

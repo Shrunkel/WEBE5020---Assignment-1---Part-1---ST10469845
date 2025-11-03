@@ -1,46 +1,70 @@
-
-.hero-container{
-    width:100%;
-    height:170px;
-    overflow: hidden;
-    position:relative;
-  }
-
-.menu img {
-    object-fit: cover;
-
+/* Base styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #200d31;
 }
 
-  /*Tablet menu*/
-  @media all and (min-width: 468px){ 
-
-.hero-container{
-        width:100%;
-        height:300px;
-        overflow: hidden;
-        position:relative;
-      }
-
-.menu img {
-    overflow: hidden;
-    object-fit: cover;
-
+/* HERO SECTION */
+.hero-container {
+  width: 100%;
+  height: 170px;
+  overflow: hidden;
+  position: relative;
 }
 
-  }
-
-@media all and (min-width: 768px){
-
-.hero-container{
-    width:100%;
-    height:600px;
-    overflow: hidden;
-    position: relative;
-  }
-
-.menu img {
-    overflow: hidden;
-    object-fit: cover;
+.hero-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
-     }
+/* MENU SECTION */
+.menu {
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.menu img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* TABLET VIEW */
+@media all and (min-width: 468px) {
+  .hero-container {
+    height: 300px;
+  }
+
+  .menu img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+
+/* LAPTOP / DESKTOP VIEW */
+@media all and (min-width: 768px) {
+  .hero-container {
+    height: 600px;
+  }
+
+  .menu img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+
+/* OPTIONAL — Very large screens */
+@media all and (min-width: 1200px) {
+  .hero-container {
+    height: 700px;
+  }
+}

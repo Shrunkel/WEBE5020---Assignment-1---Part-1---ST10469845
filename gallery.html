@@ -1,0 +1,267 @@
+<!DOCTYPE html> 
+
+<html> 
+
+    <head> 
+
+        <title>Gallery</title> 
+
+        <meta charset="UTF-8"> 
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+        <link rel="stylesheet" href="css/gallery.css"> 
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    </head> 
+
+    <body> 
+
+        <!--header Section-->
+        <header>
+            <a href="index.html"><img class="logoimg" src="assets/NCLogo.png" alt="logoimg"></a>     <!--Insert logo image-->
+            <li class="logo"><a class="a-header" href="index.html">Nook Cafe</a></li>
+        <nav>
+            <ul class="NavOptions">
+                <li class="item"><a class="a-header" target="blank" href="gaming.html">Video game section</a></li>
+                <li class="item"><a class="a-header" target="blank" href="cafe.html" >Cafe menu</a></li>
+                <li class="item button"><a class="a-header" target="blank" href="enquire.html">Enquire</a></li>
+                <li class="toggle"><a href="#"><span class="bars"></span></a></li>
+            </ul>
+        </nav>
+        </header>
+        <hr class="custom-hr">
+ 
+
+    <h1>Image Slider</h1> 
+
+    <div class="image-slider-container"> 
+
+      <input type="radio" name="slider" id="image1" checked> 
+
+      <input type="radio" name="slider" id="image2"> 
+
+      <input type="radio" name="slider" id="image3"> 
+
+      <input type="radio" name="slider" id="image4"> 
+
+      <input type="radio" name="slider" id="image5"> 
+
+      <input type="radio" name="slider" id="image6"> 
+
+ 
+
+      <div class="slider-images"> 
+
+        <img src="assets/cafesnacks.jpeg" alt="Image 1"> 
+
+        <img src="assets/cafeimghome.jpeg" alt="Image 2"> 
+
+        <img src="assets/cafeimg1.jpeg" alt="Image 3"> 
+
+        <img src="assets/consoleadd.jpeg" alt="Image 4"> 
+
+        <img src="assets/cafeimg2.jpeg" alt="Image 5"> 
+
+        <img src="assets/vradd.jpeg" alt="Image 6"> 
+
+      </div> 
+
+       
+
+      <div class="slider-navigation"> 
+
+        <label for="image1"></label> 
+
+        <label for="image2"></label> 
+
+        <label for="image3"></label> 
+
+        <label for="image4"></label> 
+
+        <label for="image5"></label> 
+
+        <label for="image6"></label> 
+
+      </div> 
+
+    </div> 
+
+     
+
+    <h1>Photo Gallery</h1> 
+
+ 
+
+    <main> 
+
+        <div class="picture"> 
+
+            <div class="info"> 
+
+                <h2>Foods</h2> 
+
+                <p class="desc">THe absolute best snacks, drinks one can possibly have</p>       
+
+            </div> 
+
+            <img src="assets/cafesnacks.jpeg" data-src="http://freeaussiestock.com/free/Victoria/Melbourne/slides/fed_square.jpg"> 
+
+        </div> 
+
+         
+
+        <div class="picture"> 
+
+            <div class="info"> 
+
+                <h2>PC</h2> 
+
+                <p class="desc">Newly updated PCs to run almost every game you can think of</p>       
+
+            </div> 
+
+            <img src="assets/pcPage.jpeg" data-src="https://media.defense.gov/2013/Jul/16/2000032379/-1/-1/0/130628-F-DQ639-002.JPG"> 
+
+        </div> 
+
+         
+
+        <div class="picture"> 
+
+            <div class="info"> 
+
+                <h2>Cafe</h2> 
+
+                <p class="desc">Grab some food and get energy to go back and play some games</p>       
+
+            </div> 
+
+            <img src="assets/cafeimg1.jpeg" data-src="https://s0.geograph.org.uk/geophotos/03/25/64/3256477_ec7d83ab.jpg"> 
+
+        </div> 
+
+         
+
+        <div class="picture"> 
+
+            <div class="info"> 
+
+                <h2>Consoles</h2> 
+
+                <p class="desc">Playstation, XBox, Nintendo. Every console is available for you to play with</p>       
+
+            </div> 
+
+            <img src="assets/consoleadd.jpeg" data-src="http://freeaussiestock.com/free/Victoria/Melbourne/slides/melbourne_museum_roof.jpg"> 
+
+        </div> 
+
+         
+
+        <div class="picture"> 
+
+            <div class="info"> 
+
+                <h2>Bar</h2> 
+
+                <p class="desc">Amazing ambience, music, and food. A place for users to chill and unwind after a day. The perfect hangout spot</p>       
+
+            </div> 
+
+            <img src="assets/cafeimg2.jpeg" data-src="https://live.staticflickr.com/2387/1726578675_62f09cb233_z.jpg"> 
+
+        </div> 
+
+         
+
+        <div class="picture"> 
+
+            <div class="info"> 
+
+                <h2>VR</h2> 
+
+                <p class="desc">The vr section is a variety section filled with either multiplayed or single player games allowing users to experience an immersive gaming experience</p>       
+
+            </div> 
+
+            <img src="assets/vradd.jpeg" data-src="https://s0.geograph.org.uk/geophotos/04/31/24/4312454_79d0a1d8.jpg"> 
+
+        </div> 
+
+    </main> 
+
+     
+
+<div id="lightbox" class="lightbox"> 
+
+  <span class="close-btn">&times;</span> 
+
+  <a class="prev-arrow">&#10094;</a> 
+
+  <a class="next-arrow">&#10095;</a> 
+
+  <div class="lightbox-content-container"> 
+
+    <img class="lightbox-image" id="lightbox-img"> 
+
+    <p id="caption"></p> 
+
+  </div> 
+
+</div> 
+
+    <script src="JScript/lightbox.js"></script> 
+
+    <!--Footer Section-->
+        <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Contact us</h4>
+                    <ul> 
+                        <li><a href="tel:+0720664782">Call now [011 678 1234]</a></li> <!--Turn to contact number-->
+                        <li><a href="email">NookCafe@gmail.com</a></li>
+                        <p class="copyright">&copy; copyright reserved</p>
+                    </ul>
+                </div>
+  
+                <div class="footer-col">
+                    <h4>Locations</h4>
+                    <ul>
+                        <li><a href="https://www.google.com/maps/place/Sandton+City+Office+Towers/@-26.1079468,28.0537605,17z/data=!4m14!1m7!3m6!1s0x1e957334662cb431:0x484917656444f4d5!2sSandton+City+Office+Towers!8m2!3d-26.1079468!4d28.0537605!16s%2Fg%2F11nx0lq570!3m5!1s0x1e957334662cb431:0x484917656444f4d5!8m2!3d-26.1079468!4d28.0537605!16s%2Fg%2F11nx0lq570?entry=ttu&g_ep=EgoyMDI1MDkxNy4wIKXMDSoASAFQAw%3D%3D">Sandton</a></li> 
+                    </ul>
+                </div>
+  
+  
+                <div class="footer-col">
+                    <h4>Follow us</h4>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/nookcafe6?igsh=NDk3c212amtvMW9z&utm_source=qr"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+  
+            </div>
+        </div>
+    </footer>
+
+    <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggle = document.querySelector(".toggle");
+    const items = document.querySelectorAll(".item");
+
+    if (toggle) {
+      toggle.addEventListener("click", function (e) {
+        e.preventDefault();
+        items.forEach(item => item.classList.toggle("active"));
+      });
+    }
+  });
+</script>
+
+
+</body> 
+
+</html> 
